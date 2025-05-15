@@ -1,0 +1,47 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Element</title>
+    <script src="./7-Objetos element-estilos.js"></script>
+    <style>
+        .color-negro{
+            background-color: black;
+            color: #F9F9F9;
+        }
+        .color-azul{
+            background-color: cadetblue;
+            color: brown;
+        }
+    </style>
+</head>
+<body onload="iniciar()">
+    <section>
+        <h1>Objeto Element - Estilos</h1>
+        <p id="description">
+            Creando objetos Element - Modificando estilos.
+        </p>
+        <p id="caracteristicas">
+            Lo que convierte a JS en un lenguaje dinamico es la capacidad de modificar
+            los atributos estos elementos.
+        </p>
+        <div id="division">
+            <p id="tema">
+                Temas
+            </p>
+            <p id="contenido">
+                Contenido
+            </p>
+        </div>
+        <button id="boton-reload" onclick="modificarPropiedades()">Agrandar descripcion</button>        
+        <button id="boton-reload" onclick="cambiarColor()">Alternar color</button>        
+        <button id="boton-reload" onclick="alternarAzul()">Alterna la clase color azul</button>        
+        <br><br>
+        <button id="boton-reload" onclick="location.reload()">Recargar</button>
+    </section>
+</body>
+</html>
