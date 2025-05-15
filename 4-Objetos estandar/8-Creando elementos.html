@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creando elementos</title>
+    <script src="./8-Creando elementos.js"></script>
+</head>
+<body>
+    <section>
+        <h1>Creando Elementos</h1>
+        <p id="description">
+            Creando elementos 
+        </p>
+        <p id="caracteristicas">
+            Cuando se agrega codigo HTML a un documento a travez de las propiedades innerHTML o 
+            insertAdjacentHTML el navegador analiza el documento y genera objetos element necesarios 
+            para representar los nuevo elementos.
+        </p>
+        <p id="otro-parrafo" style="background-color: brown;">
+            Otro parrafo
+        </p>
+    </section>
+    <button onclick="agregarElemento()">Crear elemento</button>
+    <button onclick="eliminarElemento()">Eliminar elemento</button>
+    <br><br>
+    <button id="boton-reload" onclick="location.reload()">Recargar</button>
+</body>
+</html>
