@@ -1,0 +1,47 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Element</title>
+    <script src="./7.2-Objetos element-contenido.js"></script>
+    <style>
+        .color-blue{
+            background-color: cadetblue;
+        }
+        .color-gray{
+            background-color: #d2d2d2;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <section class="color-gray">
+        <h1>Objeto Element - Contenido</h1>
+        <p id="description">
+            Creando objetos Element - Modificando contenido.
+        </p>
+        <p id="caracteristicas">
+            Lo que convierte a JS en un lenguaje dinamico es la capacidad de modificar
+            los atributos estos elementos.
+        </p>
+        <div id="division">
+            <p id="tema">
+                Temas
+            </p>
+            <p id="contenido">
+                Contenido
+            </p>
+        </div>
+    </section>
+    <button id="boton-reload" onclick="cambiarTexto()">Cambiar texto</button>
+    <button id="boton-reload" onclick="agregarTexto()">Agregar guion</button>
+    <button id="boton-reload" onclick="agregarElemento()">Agregar parrafo a section</button>
+    <br><br>
+    <button id="boton-reload" onclick="location.reload()">Recargar</button>
+</body>
+</html>
