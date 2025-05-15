@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto Documento</title>
+    <script src="./6-Objeto documento.js"></script>
+</head>
+<body onload="iniciar()">
+    <section>
+        <h1>Objeto Documento</h1>
+        <p id="description">
+            Trabajando con el objeto document...
+        </p>
+        <p id="caracteristicas">
+            Un documento HTML se puede interpretar como un objeto de tipo document.
+            Este objeto (document) esta almacenado dentro del objeto global window, 
+            y esta compuesto por varios elementos de tipo element
+        </p>
+        <div id="division">
+            <p id="tema">
+                Temas
+            </p>
+            <p id="contenido">
+                Contenido
+            </p>
+        </div>
+        <button id="boton-ids" onclick="mostrarParrafos()">Parrafos ids</button>
+        <button id="boton-ids" onclick="mostrarPorQuery()">Parrafo por query</button>
+        <button id="boton-ids" onclick="mostrarTodosPorQuery()">Parrafo por query</button>
+        <button id="boton-ids" onclick="buscarSeccion()">Elementos hijos de elemento padre</button>
+        <br><br>
+        <button id="boton-reload" onclick="location.reload()">Recargar</button>
+    </section>
+</body>
+</html>
