@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Temperatura</title>
+    <script src="./2-Temperatura local.js"></script>
+    <style>
+        .excercise-container{
+            border: 1px solid black;
+            padding: 20px;
+        }
+        td{
+            text-align: center;
+        }
+        thead > tr {
+            background-color: #dcdcdc;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Reto Temperatura</h1>
+        <h4>Consideraciones</h4>
+        <ul>
+            <li>Se debe visualizar en una tabla el registro de todas las temperaturas ingresadas.</li>
+            <li>El contenido de la tabla debe actualizarse con cada temperatura registrada.</li>
+            <li>Los valores de promedio, temperatura máxima, temperatura mínima, varianza y desviación estándar deben irse actualizando constantemente con cada nueva temperatura ingresada y deben ser visualizadas a partir de la segunda temperatura registrada.</li>
+        </ul>
+        <hr>
+    </div>
+    <div class="excercise-container">
+        <label for="temperatura">Temperatura:</label>
+        <input type="number" id="temperatura" name="temperatura">°C
+        <br><br>
+        <button onclick="guardarTemperatura()">agregar</button>
+        <br><br><hr>
+        <table>
+            <thead>
+                <tr>
+                    <td>Horario</td>
+                    <td>Temperatura</td>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <br><br>
+        <p id="promedio"  style="display: none;"></p>
+        <p id="temp-max"  style="display: none;"></p>
+        <p id="temp-min"  style="display: none;"></p>
+        <p id="var-des"  style="display: none;"></p>
+    </div>
+    <br><hr>
+    <button id="boton-reload" onclick="location.reload()">Recargar</button>
+</body>
+</html>
