@@ -1,0 +1,76 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Calificaciones</title>
+    <script src="./1-Registro de calificaciones.js"></script>
+    <style>
+        .excercise-container{
+            border: 1px solid black;
+            padding: 20px;
+        }
+        td{
+            text-align: center;
+        }
+        thead > tr {
+            background-color: #dcdcdc;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Reto calificaciones</h1>
+        <h4>Consideraciones</h4>
+        <ul>
+            <li>Solo se aceptan calificaciones entre 0 y 10</li>
+            <li>El programa solo puede almacenar como máximo 40 calificaciones</li>
+            <li>Cada calificación se debe ingresar de manera individual, sin perder el registro de las calificaciones ingresadas previamente.</li>
+        </ul>
+        <hr>
+    </div>
+    <div class="excercise-container">
+        <label for="calificacion">Calificacion:</label>
+            <input type="number" id="calificacion" name="calificacion">
+            <br><br>
+            <button onclick="guardarCalificacion()">agregar</button>
+            <br><br><hr>
+            <table >
+                <thead>
+                    <tr>
+                        <td>Rango</td>
+                        <td>Calificaciones</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0 a 3.99</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>4 a 5.99</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>6 a 7.99</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>8 a 8.99</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>9 a 10</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p id="promedio"  style="display: none;">
+            </p>
+    </div>
+    <br><hr>
+    <button id="boton-reload" onclick="location.reload()">Recargar</button>
+</body>
+</html>
