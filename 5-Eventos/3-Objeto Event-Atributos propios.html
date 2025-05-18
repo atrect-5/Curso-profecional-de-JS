@@ -1,0 +1,49 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddEventListener</title>
+    <script src="./3-Objeto Event-Atributos propios.js"></script>
+    <style>
+        #contenedor{
+            width: 400px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        #barra-progreso{
+            width: 0;
+            height: 10px;
+            background-color: cornflowerblue;
+            pointer-events: none; /* Evita que interfiera con el evento 'mousemove' */
+        }
+        #bloque{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Objeto Event</h1>
+        <p>El objeto event varia entre el evento que desencadena la accion.</p>
+    </div>
+    <li>Al dar click en cualquier lugar, saldra una alerta con las coordenadas del mouse</li>
+    <br>
+    <li>Se desplazara la barra junto al mouse cuando se mueva dentro del contenedor</li>
+    <div id="contenedor">
+        <div id="barra-progreso"></div>
+    </div>
+    <br>
+    <li>Al presionar las teclas del '0' al '9' el bloque cambiara de color. (Cualquier otra lo volvera blanco)</li>
+    <div id="bloque"></div>
+    <div>
+        <br><br>
+        <button onclick="location.reload()">Recargar</button>
+    </div>
+</body>
+</html>
