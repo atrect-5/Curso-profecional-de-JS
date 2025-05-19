@@ -6,14 +6,14 @@ const mostrarPosicion = (e) => {
     alert(`Posicion: x: ${e.pageX}, y: ${e.pageY}`) // Posición del cursor relativa a toda la página, incluyendo cualquier desplazamiento (scroll).
 }
 
+// Se agrega la funcion mostrarPosicion al evento click
+addEventListener('click', mostrarPosicion)
+
 // Obtiene el elemento 'contenedor y se le agrega un listener de evento
 const movimiento = () => {
     const contenedor = document.getElementById('contenedor')
     contenedor.addEventListener('mousemove', moverBarra)
 }
-
-// Se agrega la funcion mostrarPosicion al evento click
-addEventListener('click', mostrarPosicion)
 
 // Desplaza la barra segun la posicion del raton relativa a 'contenedor'
 const moverBarra = (e) => {

@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retos Eventos</title>
+    <script src="./1-Posicion en bloque.js"></script>
+    <style>
+        #contenedor{
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+        }
+        #bloque{
+            pointer-events: none;
+            position: relative;
+            width: 10px;
+            height: 10px;
+            background-color: black;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Retos Eventos</h1>
+        <p>Hacer que en un bloque de 400px x 400px aparezca un recuadro de 10px x 10px que siga al raton</p>
+    </div>
+    <div id="contenedor">
+        <div id="bloque"></div>
+    </div>
+    <div>
+        <br><br>
+        <button onclick="location.reload()">Recargar</button>
+    </div>
+</body>
+</html>
