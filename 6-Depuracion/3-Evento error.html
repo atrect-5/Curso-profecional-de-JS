@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento error</title>
+    <script src="./3-Evento error.js"></script>
+</head>
+<body>
+    <h1>Evento error</h1>
+    <p>
+        Nace con el objetivo de manejar errores en la ejecución de scripts.
+        Se activa cuando ocurre un error en la ejecución de un script.
+    </p>
+    <p>
+        Esta disponible dentro del objeto global window.
+        El evento error crea su propio objeto llamado error event.
+    </p>
+    <p>Ctrl + Shift + i : Para abrir la consola</p>
+
+    <button onclick="llamaFuncionInexistente()">Llamar a una funcion que no existe (provocar error)</button>
+    <br>
+    <button onclick="limpiarConsola()">Limpiar Consola</button>
+    <br><br>
+    <button onclick="location.reload()">Recargar</button>
+</body>
+</html>
