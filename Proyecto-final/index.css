@@ -1,0 +1,44 @@
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+summary{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+th, td {
+    border: none; /* Sin bordes laterales ni exteriores */
+    padding: 8px;
+    text-align: center;
+}
+
+thead tr {
+    border-bottom: 2px solid #333; /* Línea gruesa bajo el encabezado */
+}
+
+tbody tr {
+    border-bottom: 1px solid #aaa; /* Línea entre filas */
+}
+
+tbody td {
+    border-right: 1px solid #aaa; /* Línea entre columnas */
+}
+
+tbody tr:last-child {
+    border-bottom: none; /* Sin línea bajo la última fila */
+}
+
+tbody td:last-child {
+    border-right: none; /* Sin línea a la derecha de la ultima columna */
+}
