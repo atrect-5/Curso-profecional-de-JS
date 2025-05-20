@@ -56,12 +56,15 @@ const _products = (start) => {
         // Regresa un producto por Id
         getProductById: (id) => {
             const index = products.findIndex((item) => item.id === id)
+            if (index === -1){
+                throw {error: 'No se encontro el producto'}
+            }
             return products[index]
         },
         // Agrega un nuevo producto
         createProduct: (name, stored, price) => {
             let newProduct = {
-                id: products.length + 1,
+                id: String(products.length + 1),
                 name: name,
                 stored: stored,
                 price: price

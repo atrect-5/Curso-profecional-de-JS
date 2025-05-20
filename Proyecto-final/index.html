@@ -16,6 +16,7 @@
         <h1>The Big Farmer Sale - Almacen</h1>
         <h4 id="cashier">Caja: </h4>
     </div>
+    <!-- Seccion para mostrar/agregar productos del inventario  -->
     <hr><br>
     <details open>
         <summary>Inventario</summary>
@@ -38,9 +39,9 @@
             <form id="addProductForm">
                 <div class="form-container">
                     <input type="text" id="np_name" placeholder="Nombre del producto" required>
-                    <input type="number" id="np_p_price" placeholder="Precio compra (MNX/kg)" required>
-                    <input type="number" id="np_s_price" placeholder="Precio venta (MNX/kg)" required>
-                    <input type="number" id="np_stored" placeholder="Existencia (kg)" required>
+                    <input type="number" id="np_p_price" placeholder="Precio compra (MNX/kg)" required step="any">
+                    <input type="number" id="np_s_price" placeholder="Precio venta (MNX/kg)" required step="any">
+                    <input type="number" id="np_stored" placeholder="Existencia (kg)" required step="any">
                 </div>
                 <div class="button-container">
                     <button type="submit" class="save-button">Agregar</button>
@@ -50,5 +51,76 @@
         </details>
     </details>
     <br><hr><br>
+    <!-- Seccion para mostrar/agregar las ventas realizadas -->
+    <details id="sale-info" open>
+        <summary>Ventas registradas</summary>
+        <table id="sales-table">
+            <thead>
+                <tr>
+                    <th>Id Producto</th>
+                    <th>Fecha</th>
+                    <th>Cantidad (kg)</th>
+                    <th>Total MNX/kg</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <br>
+        <details id="addSaleDetails">
+            <summary class="sub-summary">Vender producto</summary>
+            <br>
+            <form id="saleForm">
+                <div class="form-container">
+                    <input type="text" id="id_product_sale" placeholder="Id del producto" required>
+                    <span id="product-sale-name">Producto: | Precio:</span>
+                    <input type="number" id="quantity_sale" placeholder="Cantidad (kg)" required step="any">
+                    <input type="number" id="total_sale" placeholder="Total venta (MNX/kg)" disabled step="any">
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="save-button">Vender</button>
+                    <button type="button" class="cancel-button" id="cancelSale">Cancelar</button>
+                </div>
+            </form>
+        </details>
+    </details>
+    <br><hr><br>
+    <!-- Seccion para mostrar/agregar las compras realizadas -->
+    <details id="purchase-info" open>
+        <summary>Compras registradas</summary>
+        <table id="purchases-table">
+            <thead>
+                <tr>
+                    <th>Id Producto</th>
+                    <th>Fecha</th>
+                    <th>Precio compra</th>
+                    <th>Cantidad (kg)</th>
+                    <th>Total MNX/kg</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <br>
+        <details id="addPurchaseDetails">
+            <summary class="sub-summary">Comprar producto</summary>
+            <br>
+            <form id="purchaseForm">
+                <div class="form-container">
+                    <input type="text" id="id_product_purchase" placeholder="Id del producto" required>
+                    <span id="product-purchase-name">Producto: </span>
+                    <input type="number" id="quantity_purchase" placeholder="Cantidad (kg)" required step="any">
+                    <input type="number" id="price_purchase" placeholder="Precio de compra (kg)" required step="any">
+                    <input type="number" id="total_purchase" placeholder="Total compra (MNX/kg)" disabled step="any">
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="save-button">Comprar</button>
+                    <button type="button" class="cancel-button" id="cancelPurchase">Cancelar</button>
+                </div>
+            </form>
+        </details>
+    </details>
+    <!--  -->
+    <br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
