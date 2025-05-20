@@ -97,7 +97,7 @@ const _purchase = (start) => {
     let purchases = start
     return {
         // Guarda una venta en la lista de compras
-        newSale: (id, quantity, price, ) => {
+        newPurchase: (id, quantity, price ) => {
             purchases.push({
                 id: id,
                 date: new Date(),
