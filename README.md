@@ -7,7 +7,15 @@ El repositorio se divide en los siguientes modulos:
 * Objetos estandar
 * Eventos
 * Depuracion
-* API
+* API (Librerias externas)
 
-Este curso tambien cuenta con un proyecto final, en el que se aplicaran los conocimientos adquiridos en el curso.
-(Aqui vendra una descripcion del proyecto final)
+Este curso tambien cuenta con un proyecto final, en el que se aplicaran los conocimientos adquiridos en el curso.  
+Descripcion del proyecto:  
+* Simular el sistema de registro de un almacen de una tienda que vende productos de frutas y verduras  
+  
+    
+## Ejecucion
+Cada archivo JS viene con su respectivo HTML para poder correr el codigo.  
+Solo debes abrir el archivo HTML en el navegador para ejecutarlo.  
+  
+Los que no cuentan con su respectivo HTML se corren en la terminal del editor de codigo.
