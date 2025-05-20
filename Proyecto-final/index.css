@@ -9,12 +9,20 @@ table {
     width: 100%;
 }
 
+
 summary{
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 5px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.sub-summary{
+    width: 50%;
+    background-color: #555;
+    margin: 0 auto;
 }
 
 th, td {
@@ -41,4 +49,58 @@ tbody tr:last-child {
 
 tbody td:last-child {
     border-right: none; /* Sin línea a la derecha de la ultima columna */
+}
+
+input{
+    border: 1px solid #aaa;
+    background-color: #eeeeee;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 60%;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+button:hover{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+button:active{
+    scale: 0.95;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.cancel-button{
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.save-button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
 }
