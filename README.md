@@ -1,3 +1,5 @@
+# Curso Profesional de JS
+###### Azul School
 Este repositorio contiene las practicas realizadas para el curso de JS en Azul School
 
 El repositorio se divide en los siguientes modulos:
