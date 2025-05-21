@@ -136,7 +136,7 @@ const showProductNamePurchase = (id) => {
     let spanData = document.getElementById('product-purchase-name')
     try{
         let product = products.getProductById(id)
-        spanData.innerHTML = `Producto: ${product.name}`
+        spanData.innerHTML = `Producto: ${product.name} | Precio venta: $ ${product.price}`
         document.getElementById('quantity_purchase').dispatchEvent(new Event('change'))
     } catch (err) {
         spanData.innerHTML = `Producto: N/E`
@@ -187,13 +187,36 @@ const handleAddProduct = () => {
 
 // Funcion para vender producto
 const handleSaleProduct = () => {
-    alert('Vendiendo...')
+    try {
+        let productId = document.getElementById('id_product_sale').value
+        let quantity = parseFloat(document.getElementById('quantity_sale').value)
+        let priceSale = products.getProductById(productId).price
+
+        products.sale(productId, quantity)
+        cash.sale(quantity * priceSale)
+        sales.newSale(productId, quantity, priceSale)
+
+        cleanSaleInputs(false)
+    } catch (error) {
+        alert(`Error: ${error.error}`)
+    }
 }
 
 // Funcion para comprar producto
 const handlePurchaseProduct = () => {
-    alert('Comprando...')
-    
+    let productId = document.getElementById('id_product_purchase').value
+    let quantity = parseFloat(document.getElementById('quantity_purchase').value)
+    let pricePurchase = parseFloat(document.getElementById('price_purchase').value)
+    try {
+        products.getProductById(productId)
+        cash.purchase(quantity * pricePurchase)
+        products.purchase(productId, quantity)
+        purchase.newPurchase(productId, quantity, pricePurchase)
+
+        cleanPurchaseInputs(false)
+    } catch (error) {
+        alert(`Error: ${error.error}`)
+    }
 }
 
 // Maneja el envio de formularios
